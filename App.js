@@ -1,4 +1,3 @@
-//import { StatusBar } from "expo-status-bar";
 import { Button, StyleSheet, Text, View, StatusBar } from "react-native";
 import { Provider, useSelector, useDispatch } from "react-redux";
 import React from "react";
@@ -26,12 +25,7 @@ const counterSlice = createSlice({
 const store = configureStore({
   reducer: counterSlice.reducer,
 });
-/*  
-// Video source
 
-<Text>https://www.youtube.com/watch?v=cdxoHp-vZpY</Text>
-
-*/
 function Counter() {
   // get state with useSelector
   const counter = useSelector((state) => state.counter);
